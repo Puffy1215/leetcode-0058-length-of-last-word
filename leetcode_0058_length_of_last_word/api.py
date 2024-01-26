@@ -7,7 +7,7 @@ def _is_space(c) -> bool:
     pass
 
 def _is_letter_or_space(c) -> bool:
-    pass
+    return _is_letter(c) or _is_space(c)
 
 def _check_preconditions(s) -> bool:
     if not 1 <= len(s) <= 10**4:
