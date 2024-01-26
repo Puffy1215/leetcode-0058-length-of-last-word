@@ -1,10 +1,16 @@
 """API for solving problem Length of Last Word"""
 
+def _is_upper_letter(c) -> bool:
+    return 65 <= ord(c) <= 90
+
+def _is_lower_letter(c) -> bool:
+    return 97 <= ord(c) <= 122
+
 def _is_letter(c) -> bool:
-    pass
+    return _is_upper_letter(c) or _is_lower_letter(c)
 
 def _is_space(c) -> bool:
-    pass
+    return ord(c) == 32
 
 def _is_letter_or_space(c) -> bool:
     return _is_letter(c) or _is_space(c)
