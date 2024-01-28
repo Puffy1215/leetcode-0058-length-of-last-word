@@ -25,10 +25,10 @@ def _check_preconditions(s: str) -> bool:
     if not 1 <= len(s) <= 10**4:
         return False
 
-    if not all(_is_letter_or_space(c for c in s)):
+    if not all(_is_letter_or_space(c) for c in s):
         return False
 
-    if not any(_is_letter(c for c in s)):
+    if not any(_is_letter(c) for c in s):
         return False
 
     return True
