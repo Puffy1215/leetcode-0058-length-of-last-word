@@ -39,4 +39,7 @@ def length_of_last_word(s: str) -> int:
 
     assert _check_preconditions(s)
 
-    pass
+    s = s.rstrip()
+    i = s.rfind(" ")
+
+    return len(s) - (i + 1)
