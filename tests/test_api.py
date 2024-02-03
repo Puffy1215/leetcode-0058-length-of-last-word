@@ -13,7 +13,7 @@ from leetcode_0058_length_of_last_word import api
         [6, "1 12 123 1234 12345"],
     ),
 )
-def test_length_of_last_word(result, s) -> None:
+def test_length_of_last_word(result: int, s: str) -> None:
     """Tests solution for problem Length of Last Word"""
 
     assert api.length_of_last_word(s) == result
