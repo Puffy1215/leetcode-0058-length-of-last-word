@@ -21,8 +21,12 @@ def _is_letter_or_space(c: str) -> bool:
     return _is_letter(c) or _is_space(c)
 
 
+S_MAX = 10**4
+S_MIN = 1
+
+
 def _check_preconditions(s: str) -> bool:
-    if not 1 <= len(s) <= 10**4:
+    if not S_MIN <= len(s) <= S_MAX:
         return False
 
     if not all(_is_letter_or_space(c) for c in s):
